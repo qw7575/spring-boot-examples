@@ -1,0 +1,12 @@
+rootProject.name = 'spring-boot-examples'
+include 'spring-boot-base'
+include 'spring-boot-hello'
+include 'spring-boot-mybatis'
+include 'spring-boot-rabbitmq'
+include 'spring-boot-rabbitmq:spring-boot-rabbitmq-client'
+findProject(':spring-boot-rabbitmq:spring-boot-rabbitmq-client')?.name = 'spring-boot-rabbitmq-client'
+include 'spring-boot-rabbitmq:spring-boot-rabbitmq-server'
+findProject(':spring-boot-rabbitmq:spring-boot-rabbitmq-server')?.name = 'spring-boot-rabbitmq-server'
+include 'spring-boot-idempotent'
+include 'spring-boot-scheduler'
+

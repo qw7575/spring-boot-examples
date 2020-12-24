@@ -1,0 +1,81 @@
+//针对所有project的配置，包含根项目，除此之外还有subprojects 和 project，感兴趣的童鞋可以自行百度查阅
+allprojects {
+    //创建项目时的你填写
+    group 'com.qw.boot.examples'
+    version '1.0-SNAPSHOT'
+
+    //项目是java项目
+    apply plugin: 'java' //java插件
+    //项目是idea项目
+    apply plugin: 'idea'
+
+    //jdk版本
+    sourceCompatibility = 1.8
+
+    //仓库：gradle会根据从上到下的顺序依次去仓库中寻找依赖
+    repositories {
+        //优先从本地仓库获取
+        mavenLocal()
+        //从阿里云或者公司仓库获取
+        maven {
+            url 'http://maven.aliyun.com/nexus/content/groups/public/' //配置阿里云 或者 自己公司的仓库
+        }
+        //从中央仓库获取
+        mavenCentral()
+    }
+
+    ext {
+        //这里管理版本
+        springbootWebVersion = '2.3.6.RELEASE'
+        springbootVersion = '2.3.6.RELEASE'
+        springbootRedisVersion = '2.3.2.RELEASE'
+
+        fastjsonVersion = '1.2.74'
+        junitVersion = '4.12'
+        commonsVersion = '3.0'
+        slf4jVersion = '1.7.16'
+        LombokVersion = '1.18.16'
+
+    }
+
+    //项目中所使用到的依赖，这里添加的依赖会被所有项目，包括root项目继承
+    dependencies {
+//        compile("org.springframework.boot:spring-boot-starter:springbootVersion")
+//        compile("org.springframework.boot:spring-boot-starter-web:springbootWebVersion")
+//        compile("org.springframework.boot:spring-boot-starter-test:springbootVersion")
+
+        testCompile("junit:junit:$junitVersion")
+        compile("org.slf4j:slf4j-api:$slf4jVersion")
+        compile("ch.qos.logback:logback-classic:1.2.3")
+        compile("org.projectlombok:lombok:$LombokVersion")
+
+        //也可直接将版本写在最后 compile("org.slf4j:slf4j-api:1.7.16")
+        //另外一种形式 (group + name + version) compile group: 'org.slf4j', name: 'slf4j-api', version: '1.7.16'
+    }
+}
+
+
+//声明gradle脚本自身需要使用的资源
+buildscript {
+    //repositories为什么要要声明两次
+    //
+    //buildscript中的声明是gradle脚本自身需要使用的资源。可以声明的资源包括依赖项、第三方插件、maven仓库地址等。
+    //
+    //而在build.gradle文件中直接声明的依赖项、仓库地址等信息是项目自身需要的资源。
+    repositories {
+        mavenLocal()
+        maven {
+            url "http://maven.aliyun.com/nexus/content/groups/public/"
+        }
+    }
+
+    ext {
+        //这里管理版本
+        springbootVersion = '1.5.8.RELEASE'
+    }
+
+    dependencies {
+        //spring-boot插件
+        classpath("org.springframework.boot:spring-boot-gradle-plugin:$springbootVersion")
+    }
+}

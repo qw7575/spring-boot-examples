@@ -1,0 +1,13 @@
+plugins {
+    id 'java'
+}
+
+group 'com.qw.boot.examples'
+version '1.0-SNAPSHOT'
+
+
+allprojects {
+    dependencies {
+        compile project (":spring-boot-base")
+    }
+}

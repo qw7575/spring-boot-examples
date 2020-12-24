@@ -1,0 +1,19 @@
+plugins {
+    id 'application'
+    id 'spring-boot'
+}
+
+group 'com.qw.boot.examples'
+version '1.0-SNAPSHOT'
+
+
+//启动项
+//mainClassName = "com.qw.boot.examples.mybatis"
+
+//service项目所需依赖
+dependencies {
+    compile("org.springframework.boot:spring-boot-starter-web")
+    compile("org.springframework.boot:spring-boot-starter-thymeleaf")
+    //依赖子项目
+    compile project (":spring-boot-base")
+}

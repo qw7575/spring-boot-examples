@@ -19,7 +19,7 @@ Spring Boot 使用的各种示例，以最简单、最实用为标准，此开�
 
 
 **示例代码**
-- [spring-boot-helloWorld](https://github.com/qw7575/spring-boot-examples/tree/master/spring-boot-helloWorld)：Spring Boot 的 hello World 版本
+- [spring-boot-helloWorld](https://github.com/qw7575/spring-boot-examples/tree/main/spring-boot-hello)：Spring Boot 的 hello World 版本
 
 **参考文章**
 

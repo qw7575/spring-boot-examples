@@ -12,8 +12,7 @@ version '1.0-SNAPSHOT'
 
 //service项目所需依赖
 dependencies {
-    compile("org.springframework.boot:spring-boot-starter-web")
-    compile("org.springframework.boot:spring-boot-starter-thymeleaf")
+    compile("org.springframework.boot:spring-boot-starter-web:$springbootWebVersion")
     //依赖子项目
     compile project (":spring-boot-base")
 }

@@ -9,4 +9,5 @@ include 'spring-boot-rabbitmq:spring-boot-rabbitmq-server'
 findProject(':spring-boot-rabbitmq:spring-boot-rabbitmq-server')?.name = 'spring-boot-rabbitmq-server'
 include 'spring-boot-idempotent'
 include 'spring-boot-scheduler'
+include 'spring-boot-multienvironment'
 

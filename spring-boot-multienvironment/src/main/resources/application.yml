@@ -1,0 +1,5 @@
+# 激活测试配置
+spring:
+  profiles:
+    active: uat
+

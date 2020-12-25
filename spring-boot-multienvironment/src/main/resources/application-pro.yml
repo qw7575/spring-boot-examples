@@ -1,0 +1,8 @@
+server:
+  port: 8082
+
+endpoints:
+  enabled: true
+  sensitive: false
+
+environment: pro环境

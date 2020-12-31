@@ -20,7 +20,12 @@ Spring Boot 使用的各种示例，以最简单、最实用为标准，此开�
 
 **示例代码**
 - [spring-boot-helloWorld](https://github.com/qw7575/spring-boot-examples/tree/main/spring-boot-hello)：Spring Boot 的 hello World 版本
-
+- [spring-boot-apollo](https://github.com/qw7575/spring-boot-examples/tree/main/spring-boot-apollo)：Spring Boot 的 apollo配置 版本
+- [spring-boot-idempotent](https://github.com/qw7575/spring-boot-examples/tree/main/spring-boot-idempotent)：Spring Boot 的 幂等性 版本
+- [spring-boot-multienvironment](https://github.com/qw7575/spring-boot-examples/tree/main/spring-boot-multienvironment)：Spring Boot 的 多环境 版本
+- [spring-boot-nacos](https://github.com/qw7575/spring-boot-examples/tree/main/spring-boot-nacos)：Spring Boot 的 nacos 版本
+- [spring-boot-scheduler](https://github.com/qw7575/spring-boot-examples/tree/main/spring-boot-scheduler)：Spring Boot 的 定时器 版本
+  
 **参考文章**
 - [spring-boot-apollo](https://idearyou.cn/archives/javadevtoolapolloone)：Spring Boot 的 apollo 版本
 - [spring-boot-nacos](https://idearyou.cn/archives/javadevtoolnacos)：Spring Boot 的 nacos 版本

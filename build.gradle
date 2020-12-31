@@ -29,6 +29,7 @@ allprojects {
         springbootWebVersion = '2.3.6.RELEASE'
         springbootVersion = '2.3.6.RELEASE'
         springbootRedisVersion = '2.3.2.RELEASE'
+        alibabaSpringcloudVersion = '0.2.2'
 
         fastjsonVersion = '1.2.74'
         junitVersion = '4.12'

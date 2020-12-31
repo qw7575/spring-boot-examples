@@ -1,0 +1,19 @@
+plugins {
+    id 'java'
+}
+
+group 'com.qw.boot.examples'
+version '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    compile("org.springframework.boot:spring-boot-starter-web:$springbootWebVersion")
+    compile("com.alibaba.boot:nacos-config-spring-boot-starter:$alibabaSpringcloudVersion")
+}
+
+test {
+    useJUnitPlatform()
+}

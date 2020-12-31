@@ -1,0 +1,12 @@
+app:
+  id: halloword
+
+apollo:
+  meta: http://localhost:8080
+  #cluster: myCluster
+  #cacheDir: /opt/testDir # 配置的本地缓存目录，这行也可不配置，不配Apollo有默认值target/classes/config-cache
+  bootstrap:
+    enable: true
+    namespaces: application
+
+env: DEV

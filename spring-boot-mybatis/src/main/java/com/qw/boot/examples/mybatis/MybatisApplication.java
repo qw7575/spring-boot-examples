@@ -7,8 +7,8 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
  * @author qiwu
  */
 @SpringBootApplication
-public class MybatisStartServerApplication {
+public class MybatisApplication {
     public static void main(String[] args) {
-        SpringApplication.run(MybatisStartServerApplication.class);
+        SpringApplication.run(MybatisApplication.class);
     }
 }

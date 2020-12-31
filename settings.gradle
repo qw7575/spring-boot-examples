@@ -10,4 +10,6 @@ findProject(':spring-boot-rabbitmq:spring-boot-rabbitmq-server')?.name = 'spring
 include 'spring-boot-idempotent'
 include 'spring-boot-scheduler'
 include 'spring-boot-multienvironment'
+include 'spring-boot-apollo'
+include 'spring-boot-nacos'
 

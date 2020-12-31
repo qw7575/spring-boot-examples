@@ -1,0 +1,14 @@
+server:
+  port: 8100
+  context-path:  /
+
+spring:
+  application:
+    name: nacosServer
+  cloud:
+    nacos:
+      config:
+        file-extension: properties,yml,yaml
+
+  profiles:
+    active: dev

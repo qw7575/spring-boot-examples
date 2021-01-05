@@ -1,0 +1,14 @@
+plugins {
+    id 'java'
+}
+
+group 'com.qw.boot.examples'
+version '1.0-SNAPSHOT'
+
+allprojects {
+    dependencies {
+        compile("org.springframework.boot:spring-boot-starter-web:$springbootWebVersion")
+        compile("org.apache.rocketmq:rocketmq-spring-boot-starter:2.0.3")
+        compile("com.alibaba:fastjson:1.2.44")
+    }
+}

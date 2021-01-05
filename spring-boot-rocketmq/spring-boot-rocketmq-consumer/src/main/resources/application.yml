@@ -1,0 +1,14 @@
+spring:
+  application:
+    name: springboot-rocketmq-consumer
+  main:
+    allow-bean-definition-overriding: true
+
+
+# 开发环境配置
+server:
+  # 服务端口
+  port: 8009
+
+rocketmq:
+  name-server: 127.0.0.1:9876

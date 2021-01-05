@@ -1,0 +1,21 @@
+spring:
+  application:
+    name: springboot-rocketmq-consumer
+  main:
+    allow-bean-definition-overriding: true
+
+
+# 开发环境配置
+server:
+  # 服务端口
+  port: 8008
+
+rocketmq:
+  name-server: 127.0.0.1:9876
+  producer:
+    group: my-group
+    send-message-timeout: 300000
+    compress-message-body-threshold: 4096
+    max-message-size: 4194304
+    retry-next-server: true
+    retry-times-when-send-failed: 2

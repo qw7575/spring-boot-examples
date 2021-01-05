@@ -8,7 +8,6 @@ allprojects {
     apply plugin: 'java' //java插件
     //项目是idea项目
     apply plugin: 'idea'
-
     //jdk版本
     sourceCompatibility = 1.8
 
@@ -36,7 +35,7 @@ allprojects {
         commonsVersion = '3.0'
         slf4jVersion = '1.7.16'
         LombokVersion = '1.18.16'
-
+        guavaVersion = '19.0'
     }
 
     //项目中所使用到的依赖，这里添加的依赖会被所有项目，包括root项目继承
@@ -49,6 +48,8 @@ allprojects {
         compile("org.slf4j:slf4j-api:$slf4jVersion")
         compile("ch.qos.logback:logback-classic:1.2.3")
         compile("org.projectlombok:lombok:$LombokVersion")
+        compile("com.google.guava:guava:$guavaVersion")
+
 
         //也可直接将版本写在最后 compile("org.slf4j:slf4j-api:1.7.16")
         //另外一种形式 (group + name + version) compile group: 'org.slf4j', name: 'slf4j-api', version: '1.7.16'

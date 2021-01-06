@@ -19,4 +19,5 @@ findProject(':spring-boot-rocketmq:spring-boot-rocketmq-consumer')?.name = 'spri
 include 'spring-boot-rocketmq:spring-boot-rocketmq-producer'
 findProject(':spring-boot-rocketmq:spring-boot-rocketmq-producer')?.name = 'spring-boot-rocketmq-producer'
 include 'spring-boot-exception'
+include 'spring-boot-configure'
 

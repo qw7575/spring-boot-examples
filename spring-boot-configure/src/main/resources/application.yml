@@ -1,0 +1,11 @@
+server:
+  port: 8902
+  context-path:  /
+
+spring:
+  application:
+    name: configureServer
+
+test:
+  name: 我是配置项目测试名字001
+  age: 18

@@ -27,6 +27,7 @@ allprojects {
         //这里管理版本
         springbootWebVersion = '2.3.6.RELEASE'
         springbootVersion = '2.3.6.RELEASE'
+        springbootThymeleafVersion = '2.3.2.RELEASE'
         springbootRedisVersion = '2.3.2.RELEASE'
         alibabaSpringcloudVersion = '0.2.2'
 

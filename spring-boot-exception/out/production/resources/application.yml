@@ -1,0 +1,7 @@
+server:
+  port: 8900
+  context-path:  /
+
+spring:
+  application:
+    name: ExceptionServer

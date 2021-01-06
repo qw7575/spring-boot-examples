@@ -26,6 +26,7 @@ Spring Boot 使用的各种示例，以最简单、最实用为标准，此开�
 - [spring-boot-nacos](https://github.com/qw7575/spring-boot-examples/tree/main/spring-boot-nacos)：Spring Boot 的 nacos 版本
 - [spring-boot-scheduler](https://github.com/qw7575/spring-boot-examples/tree/main/spring-boot-scheduler)：Spring Boot 的 定时器 版本
 - [spring-boot-rocketmq](https://github.com/qw7575/spring-boot-examples/tree/main/spring-boot-rocketmq)：Spring Boot 的 rocketmq 版本
+- [spring-boot-exception](https://github.com/qw7575/spring-boot-examples/tree/main/spring-boot-exception)：Spring Boot 的 自定义异常及页面 版本
   
 **参考文章**
 - [spring-boot-apollo](https://idearyou.cn/archives/bootapollo)：Spring Boot 的 apollo 版本

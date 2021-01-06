@@ -13,9 +13,9 @@ Spring Boot 使用的各种示例，以最简单、最实用为标准，此开�
 [spring boot](https://github.com/qw7575/spring-boot-examples) &nbsp;| &nbsp;
 [vue组件库](https://github.com/qw7575/vue-qw-doc) &nbsp;| &nbsp; 
 
-## Spring Boot 2.3
+## Spring Boot 2.4
 
-**[Spring Boot 2.3 最全使用教程](https://github.com/qw7575/spring-boot-examples)**
+**[Spring Boot 2.4 最全使用教程](https://github.com/qw7575/spring-boot-examples)**
 
 
 **示例代码**

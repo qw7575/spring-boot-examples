@@ -41,16 +41,16 @@ public class MyControllerAdvice {
     @ExceptionHandler(value=MyException.class)
     public Object handleMyException(MyException e, HttpServletRequest request) {
         //返回Json数据，由前端进行界面跳转
-        //Map<String, Object> map = new HashMap<>();
-        //map.put("code", e.getCode());
-        //map.put("msg", e.getMsg());
-        //map.put("url", request.getRequestURL());
-        //return map;
+        Map<String, Object> map = new HashMap<>();
+        map.put("code", e.getCode());
+        map.put("msg", e.getMsg());
+        map.put("url", request.getRequestURL());
+        return map;
 
         //进行页面跳转
-        ModelAndView modelAndView = new ModelAndView();
-        modelAndView.setViewName("/error.html");
-        modelAndView.addObject("msg", e.getMsg());
-        return modelAndView;
+//        ModelAndView modelAndView = new ModelAndView();
+//        modelAndView.setViewName("/error.html");
+//        modelAndView.addObject("msg", e.getMsg());
+//        return modelAndView;
     }
 }

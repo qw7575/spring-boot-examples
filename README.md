@@ -28,6 +28,7 @@ Spring Boot 使用的各种示例，以最简单、最实用为标准，此开�
 - [spring-boot-rocketmq](https://github.com/qw7575/spring-boot-examples/tree/main/spring-boot-rocketmq)：Spring Boot 的 rocketmq 版本
 - [spring-boot-exception](https://github.com/qw7575/spring-boot-examples/tree/main/spring-boot-exception)：Spring Boot 的 自定义异常及页面 版本
 - [spring-boot-configure](https://github.com/qw7575/spring-boot-examples/tree/main/spring-boot-configure)：Spring Boot 的 配置文件自动映射 版本
+- [spring-boot-bean](https://github.com/qw7575/spring-boot-examples/tree/main/spring-boot-bean)：Spring Boot 的 装配和获取bean 版本
 
 
 
@@ -35,6 +36,7 @@ Spring Boot 使用的各种示例，以最简单、最实用为标准，此开�
 - [spring-boot-apollo](https://idearyou.cn/archives/bootapollo)：Spring Boot 的 apollo 版本
 - [spring-boot-nacos](https://idearyou.cn/archives/bootnacos)：Spring Boot 的 nacos 版本
 - [spring-boot-rocketmq](https://idearyou.cn/archives/bootrocketmq)：Spring Boot 的 rocketmq 版本
+- [spring-boot-bean](https://idearyou.cn/archives/bootbean)：Spring Boot 的 bean装配和获取 版本
 
 
 > 如果大家想了解关于 Spring Boot 的其它方面应用，也可以以[issues](https://github.com/qw7575/spring-boot-examples/issues)的形式反馈给我，我后续来完善。

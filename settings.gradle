@@ -13,11 +13,11 @@ include 'spring-boot-multienvironment'
 include 'spring-boot-apollo'
 include 'spring-boot-nacos'
 include 'spring-boot-rocketmq'
-
 include 'spring-boot-rocketmq:spring-boot-rocketmq-consumer'
 findProject(':spring-boot-rocketmq:spring-boot-rocketmq-consumer')?.name = 'spring-boot-rocketmq-consumer'
 include 'spring-boot-rocketmq:spring-boot-rocketmq-producer'
 findProject(':spring-boot-rocketmq:spring-boot-rocketmq-producer')?.name = 'spring-boot-rocketmq-producer'
 include 'spring-boot-exception'
 include 'spring-boot-configure'
+include 'spring-boot-bean'
 

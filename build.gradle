@@ -35,6 +35,7 @@ allprojects {
         junitVersion = '4.12'
         commonsVersion = '3.0'
         slf4jVersion = '1.7.16'
+        fastjsonVersion = '1.2.74'
         LombokVersion = '1.18.16'
         guavaVersion = '19.0'
     }
@@ -47,6 +48,7 @@ allprojects {
 
         testCompile("junit:junit:$junitVersion")
         compile("org.slf4j:slf4j-api:$slf4jVersion")
+        compile("com.alibaba:fastjson:$fastjsonVersion")
         compile("ch.qos.logback:logback-classic:1.2.3")
         compile("org.projectlombok:lombok:$LombokVersion")
         compile("com.google.guava:guava:$guavaVersion")

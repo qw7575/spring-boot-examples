@@ -20,4 +20,5 @@ findProject(':spring-boot-rocketmq:spring-boot-rocketmq-producer')?.name = 'spri
 include 'spring-boot-exception'
 include 'spring-boot-configure'
 include 'spring-boot-bean'
+include 'spring-boot-filterlistenintercept'
 

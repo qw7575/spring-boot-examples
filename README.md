@@ -30,6 +30,7 @@ Spring Boot 使用的各种示例，以最简单、最实用为标准，此开�
 - [spring-boot-configure](https://github.com/qw7575/spring-boot-examples/tree/main/spring-boot-configure)：Spring Boot 的 配置文件自动映射 版本
 - [spring-boot-bean](https://github.com/qw7575/spring-boot-examples/tree/main/spring-boot-bean)：Spring Boot 的 装配和获取bean 版本
 - [spring-boot-filterlistenintercept](https://github.com/qw7575/spring-boot-examples/tree/main/spring-boot-filterlistenintercept)：Spring Boot 的 拦截器过滤器监听器 版本
+- [spring-boot-xxljob](https://github.com/qw7575/spring-boot-examples/tree/main/spring-boot-xxljob)：Spring Boot 的 xxl-job定时器 版本
 
 
 
@@ -39,6 +40,7 @@ Spring Boot 使用的各种示例，以最简单、最实用为标准，此开�
 - [spring-boot-rocketmq](https://idearyou.cn/archives/bootrocketmq)：Spring Boot 的 rocketmq 版本
 - [spring-boot-bean](https://idearyou.cn/archives/bootbean)：Spring Boot 的 bean装配和获取 版本
 - [spring-boot-bootfilterlistenintercept](https://idearyou.cn/archives/bootfilterlistenintercept)：Spring Boot 的 拦截器过滤器监听器 版本
+- [spring-boot-xxljob](https://idearyou.cn/archives/bootxxljob)：Spring Boot 的 xxl-job定时器 版本
 
 
 > 如果大家想了解关于 Spring Boot 的其它方面应用，也可以以[issues](https://github.com/qw7575/spring-boot-examples/issues)的形式反馈给我，我后续来完善。

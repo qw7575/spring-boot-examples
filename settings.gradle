@@ -21,4 +21,7 @@ include 'spring-boot-exception'
 include 'spring-boot-configure'
 include 'spring-boot-bean'
 include 'spring-boot-filterlistenintercept'
+include 'spring-boot-jsoup'
+include 'spring-boot-fund'
+include 'spring-boot-xxljob'
 

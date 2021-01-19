@@ -1,3 +1,6 @@
+group 'com.qw.boot.examples'
+version '1.0-RELEASE'
+
 //针对所有project的配置，包含根项目，除此之外还有subprojects 和 project，感兴趣的童鞋可以自行百度查阅
 allprojects {
     //创建项目时的你填写
@@ -58,6 +61,7 @@ allprojects {
         //另外一种形式 (group + name + version) compile group: 'org.slf4j', name: 'slf4j-api', version: '1.7.16'
     }
 }
+
 
 
 //声明gradle脚本自身需要使用的资源

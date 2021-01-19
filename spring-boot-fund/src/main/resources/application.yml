@@ -1,0 +1,3 @@
+server:
+  port: 8094
+  context-path:  /

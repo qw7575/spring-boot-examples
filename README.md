@@ -31,7 +31,7 @@ Spring Boot 使用的各种示例，以最简单、最实用为标准，此开�
 - [spring-boot-bean](https://github.com/qw7575/spring-boot-examples/tree/main/spring-boot-bean)：Spring Boot 的 装配和获取bean 版本
 - [spring-boot-filterlistenintercept](https://github.com/qw7575/spring-boot-examples/tree/main/spring-boot-filterlistenintercept)：Spring Boot 的 拦截器过滤器监听器 版本
 - [spring-boot-xxljob](https://github.com/qw7575/spring-boot-examples/tree/main/spring-boot-xxljob)：Spring Boot 的 xxl-job定时器 版本
-
+- [spring-boot-factories](https://github.com/qw7575/spring-boot-examples/tree/main/spring-boot-factories)：Spring Boot 的 factories 依赖注入版本
 
 
 **参考文章**

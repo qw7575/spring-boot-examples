@@ -20,7 +20,7 @@ allprojects {
         mavenLocal()
         //从阿里云或者公司仓库获取
         maven {
-            url 'http://maven.aliyun.com/nexus/content/groups/public/' //配置阿里云 或者 自己公司的仓库
+            url 'https://maven.aliyun.com/nexus/content/groups/public/' //配置阿里云 或者 自己公司的仓库
         }
         //从中央仓库获取
         mavenCentral()
@@ -74,7 +74,7 @@ buildscript {
     repositories {
         mavenLocal()
         maven {
-            url "http://maven.aliyun.com/nexus/content/groups/public/"
+            url "https://maven.aliyun.com/nexus/content/groups/public/"
         }
     }
 

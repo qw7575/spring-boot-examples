@@ -23,5 +23,8 @@ include 'spring-boot-bean'
 include 'spring-boot-filterlistenintercept'
 include 'spring-boot-jsoup'
 include 'spring-boot-fund'
+include 'redis-spring-boot-starter'
+include 'spring-boot-factories'
+include 'spring-boot-thymeleaf'
 include 'spring-boot-xxljob'
 

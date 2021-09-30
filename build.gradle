@@ -49,12 +49,12 @@ allprojects {
 //        compile("org.springframework.boot:spring-boot-starter-web:springbootWebVersion")
 //        compile("org.springframework.boot:spring-boot-starter-test:springbootVersion")
 
-        testCompile("junit:junit:$junitVersion")
-        compile("org.slf4j:slf4j-api:$slf4jVersion")
-        compile("com.alibaba:fastjson:$fastjsonVersion")
-        compile("ch.qos.logback:logback-classic:1.2.3")
-        compile("org.projectlombok:lombok:$LombokVersion")
-        compile("com.google.guava:guava:$guavaVersion")
+        implementation("junit:junit:$junitVersion")
+        implementation("org.slf4j:slf4j-api:$slf4jVersion")
+        implementation("com.alibaba:fastjson:$fastjsonVersion")
+        implementation("ch.qos.logback:logback-classic:1.2.3")
+        implementation("org.projectlombok:lombok:$LombokVersion")
+        implementation("com.google.guava:guava:$guavaVersion")
 
 
         //也可直接将版本写在最后 compile("org.slf4j:slf4j-api:1.7.16")
@@ -85,6 +85,6 @@ buildscript {
 
     dependencies {
         //spring-boot插件
-        classpath("org.springframework.boot:spring-boot-gradle-plugin:$springbootVersion")
+//        classpath("org.springframework.boot:spring-boot-gradle-plugin:$springbootVersion")
     }
 }

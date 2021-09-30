@@ -8,6 +8,6 @@ version '1.0-SNAPSHOT'
 
 allprojects {
     dependencies {
-        compile project (":spring-boot-base")
+        implementation project (":spring-boot-base")
     }
 }

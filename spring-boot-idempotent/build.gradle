@@ -7,13 +7,13 @@ version '1.0-SNAPSHOT'
 
 
 dependencies {
-    compile("org.springframework.boot:spring-boot-starter-web:$springbootWebVersion")
+    implementation("org.springframework.boot:spring-boot-starter-web:$springbootWebVersion")
 
-    compile("org.springframework.boot:spring-boot-starter-data-redis:$springbootRedisVersion")
-    compile("com.alibaba:fastjson:$fastjsonVersion")
-    compile("redis.clients:jedis:2.9.3")
-    compile("org.aspectj:aspectjweaver:1.9.4")
+    implementation("org.springframework.boot:spring-boot-starter-data-redis:$springbootRedisVersion")
+    implementation("com.alibaba:fastjson:$fastjsonVersion")
+    implementation("redis.clients:jedis:2.9.3")
+    implementation("org.aspectj:aspectjweaver:1.9.4")
 
     //依赖子项目
-    compile project (":spring-boot-base")
+    implementation project (":spring-boot-base")
 }

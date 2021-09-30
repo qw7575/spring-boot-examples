@@ -10,8 +10,8 @@ repositories {
 }
 
 dependencies {
-    compile("org.springframework.boot:spring-boot-starter-web:$springbootWebVersion")
-    compile("com.alibaba.boot:nacos-config-spring-boot-starter:$alibabaSpringcloudVersion")
+    implementation("org.springframework.boot:spring-boot-starter-web:$springbootWebVersion")
+    implementation("com.alibaba.boot:nacos-config-spring-boot-starter:$alibabaSpringcloudVersion")
 }
 
 test {

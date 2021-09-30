@@ -6,6 +6,6 @@ group 'com.qw.boot.examples'
 version '1.0-SNAPSHOT'
 
 dependencies {
-    compile 'org.springframework.boot:spring-boot-starter:2.3.1.RELEASE'
-    compile 'org.redisson:redisson:3.13.1'
+    implementation 'org.springframework.boot:spring-boot-starter:2.3.1.RELEASE'
+    implementation 'org.redisson:redisson:3.13.1'
 }

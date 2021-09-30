@@ -7,6 +7,6 @@ version '1.0-SNAPSHOT'
 
 
 dependencies {
-    compile("org.springframework.boot:spring-boot-starter-web:$springbootWebVersion")
-    compile("com.xuxueli:xxl-job-core:2.2.0")
+    implementation("org.springframework.boot:spring-boot-starter-web:$springbootWebVersion")
+    implementation("com.xuxueli:xxl-job-core:2.2.0")
 }

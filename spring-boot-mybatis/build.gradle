@@ -1,6 +1,5 @@
 plugins {
-    id 'application'
-    id 'spring-boot'
+    id 'java'
 }
 
 group 'com.qw.boot.examples'
@@ -12,7 +11,7 @@ version '1.0-SNAPSHOT'
 
 //service项目所需依赖
 dependencies {
-    compile("org.springframework.boot:spring-boot-starter-web:$springbootWebVersion")
+    implementation("org.springframework.boot:spring-boot-starter-web:$springbootWebVersion")
     //依赖子项目
-    compile project (":spring-boot-base")
+    implementation project (":spring-boot-base")
 }

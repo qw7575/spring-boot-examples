@@ -10,8 +10,8 @@ repositories {
 }
 
 dependencies {
-    compile("org.springframework.boot:spring-boot-starter-web:$springbootWebVersion")
-    compile project (":spring-boot-base")
+    implementation("org.springframework.boot:spring-boot-starter-web:$springbootWebVersion")
+    implementation project (":spring-boot-base")
 }
 
 test {

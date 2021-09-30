@@ -10,8 +10,8 @@ repositories {
 }
 
 dependencies {
-    compile("org.springframework.boot:spring-boot-starter-web:$springbootWebVersion")
-    compile("com.ctrip.framework.apollo:apollo-client:1.1.0")
+    implementation("org.springframework.boot:spring-boot-starter-web:$springbootWebVersion")
+    implementation("com.ctrip.framework.apollo:apollo-client:1.1.0")
 }
 
 test {

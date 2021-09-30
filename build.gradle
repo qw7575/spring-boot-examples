@@ -45,9 +45,9 @@ allprojects {
 
     //项目中所使用到的依赖，这里添加的依赖会被所有项目，包括root项目继承
     dependencies {
-//        compile("org.springframework.boot:spring-boot-starter:springbootVersion")
-//        compile("org.springframework.boot:spring-boot-starter-web:springbootWebVersion")
-//        compile("org.springframework.boot:spring-boot-starter-test:springbootVersion")
+//        implementation("org.springframework.boot:spring-boot-starter:springbootVersion")
+//        implementation("org.springframework.boot:spring-boot-starter-web:springbootWebVersion")
+//        implementation("org.springframework.boot:spring-boot-starter-test:springbootVersion")
 
         implementation("junit:junit:$junitVersion")
         implementation("org.slf4j:slf4j-api:$slf4jVersion")
@@ -57,8 +57,8 @@ allprojects {
         implementation("com.google.guava:guava:$guavaVersion")
 
 
-        //也可直接将版本写在最后 compile("org.slf4j:slf4j-api:1.7.16")
-        //另外一种形式 (group + name + version) compile group: 'org.slf4j', name: 'slf4j-api', version: '1.7.16'
+        //也可直接将版本写在最后 implementation("org.slf4j:slf4j-api:1.7.16")
+        //另外一种形式 (group + name + version) implementation group: 'org.slf4j', name: 'slf4j-api', version: '1.7.16'
     }
 }
 

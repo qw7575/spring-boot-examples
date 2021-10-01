@@ -11,5 +11,4 @@ repositories {
 
 dependencies {
     implementation("org.springframework.boot:spring-boot-starter-web:$springbootWebVersion")
-    implementation project (":spring-boot-base")
 }

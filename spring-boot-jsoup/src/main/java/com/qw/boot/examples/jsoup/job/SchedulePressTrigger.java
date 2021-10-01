@@ -1,7 +1,10 @@
 package com.qw.boot.examples.jsoup.job;
 
 import com.qw.boot.examples.jsoup.service.LogicService;
+import lombok.extern.log4j.Log4j2;
 import lombok.extern.slf4j.Slf4j;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.scheduling.annotation.Scheduled;
 import org.springframework.stereotype.Component;
@@ -15,9 +18,11 @@ import java.util.Date;
  * <br> Date : 2021/1/14 5:52 下午
  * <br> Copyright (c) 2021/1/14 ZiYun Tech.
  */
-@Slf4j
 @Component
 public class SchedulePressTrigger {
+
+    Logger logger = LoggerFactory.getLogger(SchedulePressTrigger.class);
+
 
     @Autowired
     private LogicService logicService;
@@ -27,12 +32,12 @@ public class SchedulePressTrigger {
      */
     @Scheduled(initialDelay = 1000, fixedRate = 10 * 1000)
     public void doCrawlJinSeLivePress() {
-          log.info("开始抓取金色财经新闻, time:" + new Date());
+        logger.info("开始抓取金色财经新闻, time:" + new Date());
         try {
             logicService.start();
         } catch (Exception e) {
-              log.error("本次抓取金色财经新闻异常", e);
+            logger.error("本次抓取金色财经新闻异常", e);
         }
-          log.info("结束抓取金色财经新闻, time:" + new Date());
+        logger.info("结束抓取金色财经新闻, time:" + new Date());
     }
 }

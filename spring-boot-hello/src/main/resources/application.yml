@@ -1,3 +1,10 @@
 server:
   port: 8080
   context-path:  /
+
+
+qw:
+  redisson:
+    host: 49.233.170.48
+    port: 6363
+    password: Mj960705$

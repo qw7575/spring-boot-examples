@@ -1,7 +1,6 @@
 package com.qw.boot.examples.exception.config;
 
-import lombok.AllArgsConstructor;
-import lombok.Getter;
+import lombok.*;
 
 /**
  * (用一句话描述该文件做什么)
@@ -11,8 +10,8 @@ import lombok.Getter;
  * <br> Copyright (c) 2021/1/6 ZiYun Tech.
  */
 @Getter
-@AllArgsConstructor
-public enum  ErrorTypeEnum {
+@NoArgsConstructor
+public enum ErrorTypeEnum {
     /**
      * 错误类型
      */
@@ -31,4 +30,9 @@ public enum  ErrorTypeEnum {
      * 提示信息
      */
     private String msg;
+
+    ErrorTypeEnum(int code, String msg) {
+        this.code = code;
+        this.msg = msg;
+    }
 }

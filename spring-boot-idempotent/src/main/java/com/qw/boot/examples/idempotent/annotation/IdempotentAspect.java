@@ -1,14 +1,14 @@
 package com.qw.boot.examples.idempotent.annotation;
 
-import com.qw.boot.examples.base.util.R;
 import com.qw.boot.examples.idempotent.common.IdempotentException;
 import com.qw.boot.examples.idempotent.util.IdempotentKeyUtil;
-import lombok.extern.slf4j.Slf4j;
 import org.aspectj.lang.ProceedingJoinPoint;
 import org.aspectj.lang.annotation.Around;
 import org.aspectj.lang.annotation.Aspect;
 import org.aspectj.lang.annotation.Pointcut;
 import org.aspectj.lang.reflect.MethodSignature;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.autoconfigure.condition.ConditionalOnClass;
 import org.springframework.data.redis.core.RedisTemplate;
@@ -24,10 +24,13 @@ import java.util.concurrent.TimeUnit;
  * <br> Copyright (c) 2020/12/23 ZiYun Tech.
  */
 @Component
-@Slf4j
 @Aspect
 @ConditionalOnClass(RedisTemplate.class)
 public class IdempotentAspect {
+
+    Logger logger = LoggerFactory.getLogger(IdempotentAspect.class);
+
+
     private static final String KEY_TEMPLATE = "idempotent_%S";
 
     @Autowired

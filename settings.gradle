@@ -27,4 +27,5 @@ include 'redis-spring-boot-starter'
 include 'spring-boot-factories'
 include 'spring-boot-thymeleaf'
 include 'spring-boot-xxljob'
+include 'spring-boot-threadpool'
 

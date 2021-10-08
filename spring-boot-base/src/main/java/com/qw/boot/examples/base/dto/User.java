@@ -3,7 +3,6 @@ package com.qw.boot.examples.base.dto;
 import lombok.Data;
 
 /**
- * (用一句话描述该文件做什么)
  *
  * @author qiwu
  * <br> Date : 2020/12/22 7:58 下午

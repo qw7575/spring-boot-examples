@@ -1,0 +1,19 @@
+plugins {
+    id 'java'
+}
+
+group 'com.qw.boot.examples'
+version '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+//service项目所需依赖
+dependencies {
+    implementation("org.springframework.boot:spring-boot-starter-web:$springbootWebVersion")
+    implementation("org.springframework.boot:spring-boot-starter:$springbootWebVersion")
+    implementation("org.springframework.boot:spring-boot-starter-aop:$springbootWebVersion")
+    implementation("io.jsonwebtoken:jjwt:0.7.0")
+    implementation project (":spring-boot-base")
+}

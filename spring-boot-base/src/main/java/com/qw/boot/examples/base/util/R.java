@@ -4,10 +4,9 @@ import java.util.HashMap;
 import java.util.Map;
 
 /**
- * è¿”å›æ•°æ®
+ * ·µ»ØÊı¾İ
  *
  * @author chenshun
- * @date 2016å¹´10æœˆ27æ—¥ ä¸‹åˆ9:59:27
  * sunlightcs@gmail.com
  */
 public class R extends HashMap<String, Object> {
@@ -22,7 +21,7 @@ public class R extends HashMap<String, Object> {
     }
 
     public static R error() {
-        return error(ERROR, "æ“ä½œå¤±è´¥ï¼Œè¯·è”ç³»ç®¡ç†å‘˜");
+        return error(ERROR, "²Ù×÷Ê§°Ü¡¢ÇëÁªÏµ¹ÜÀíÔ±");
     }
 
     public static R error(String msg) {

@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.qw.boot.examples.codegen.mapper.fundEverydayMapper">
+  <resultMap id="BaseResultMap" type="com.qw.boot.examples.codegen.entity.fundEveryday">
+    <id column="id" jdbcType="INTEGER" property="id" />
+    <result column="create_time" jdbcType="TIMESTAMP" property="createTime" />
+    <result column="update_time" jdbcType="TIMESTAMP" property="updateTime" />
+    <result column="acc_nav" jdbcType="VARCHAR" property="accNav" />
+    <result column="change_ratio" jdbcType="VARCHAR" property="changeRatio" />
+    <result column="f_code" jdbcType="VARCHAR" property="fCode" />
+    <result column="gsz" jdbcType="VARCHAR" property="gsz" />
+    <result column="gszzl" jdbcType="VARCHAR" property="gszzl" />
+    <result column="gz_time" jdbcType="VARCHAR" property="gzTime" />
+    <result column="hq_date" jdbcType="VARCHAR" property="hqDate" />
+    <result column="is_have_redpacket" jdbcType="BIT" property="isHaveRedpacket" />
+    <result column="nav" jdbcType="VARCHAR" property="nav" />
+    <result column="navchgrt" jdbcType="VARCHAR" property="navchgrt" />
+    <result column="new_price" jdbcType="VARCHAR" property="newPrice" />
+    <result column="p_date" jdbcType="VARCHAR" property="pDate" />
+    <result column="short_name" jdbcType="VARCHAR" property="shortName" />
+    <result column="zjl" jdbcType="VARCHAR" property="zjl" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    id, create_time, update_time, acc_nav, change_ratio, f_code, gsz, gszzl, gz_time, 
+    hq_date, is_have_redpacket, nav, navchgrt, new_price, p_date, short_name, zjl
+  </sql>
+  <select id="selectByPrimaryKey" parameterType="java.lang.Integer" resultMap="BaseResultMap">
+    select 
+    <include refid="Base_Column_List" />
+    from fund_everyday
+    where id = #{id,jdbcType=INTEGER}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer">
+    delete from fund_everyday
+    where id = #{id,jdbcType=INTEGER}
+  </delete>
+  <insert id="insert" parameterType="com.qw.boot.examples.codegen.entity.fundEveryday">
+    insert into fund_everyday (id, create_time, update_time, 
+      acc_nav, change_ratio, f_code, 
+      gsz, gszzl, gz_time, 
+      hq_date, is_have_redpacket, nav, 
+      navchgrt, new_price, p_date, 
+      short_name, zjl)
+    values (#{id,jdbcType=INTEGER}, #{createTime,jdbcType=TIMESTAMP}, #{updateTime,jdbcType=TIMESTAMP}, 
+      #{accNav,jdbcType=VARCHAR}, #{changeRatio,jdbcType=VARCHAR}, #{fCode,jdbcType=VARCHAR}, 
+      #{gsz,jdbcType=VARCHAR}, #{gszzl,jdbcType=VARCHAR}, #{gzTime,jdbcType=VARCHAR}, 
+      #{hqDate,jdbcType=VARCHAR}, #{isHaveRedpacket,jdbcType=BIT}, #{nav,jdbcType=VARCHAR}, 
+      #{navchgrt,jdbcType=VARCHAR}, #{newPrice,jdbcType=VARCHAR}, #{pDate,jdbcType=VARCHAR}, 
+      #{shortName,jdbcType=VARCHAR}, #{zjl,jdbcType=VARCHAR})
+  </insert>
+  <insert id="insertSelective" parameterType="com.qw.boot.examples.codegen.entity.fundEveryday">
+    insert into fund_everyday
+    <trim prefix="(" suffix=")" suffixOverrides=",">
+      <if test="id != null">
+        id,
+      </if>
+      <if test="createTime != null">
+        create_time,
+      </if>
+      <if test="updateTime != null">
+        update_time,
+      </if>
+      <if test="accNav != null">
+        acc_nav,
+      </if>
+      <if test="changeRatio != null">
+        change_ratio,
+      </if>
+      <if test="fCode != null">
+        f_code,
+      </if>
+      <if test="gsz != null">
+        gsz,
+      </if>
+      <if test="gszzl != null">
+        gszzl,
+      </if>
+      <if test="gzTime != null">
+        gz_time,
+      </if>
+      <if test="hqDate != null">
+        hq_date,
+      </if>
+      <if test="isHaveRedpacket != null">
+        is_have_redpacket,
+      </if>
+      <if test="nav != null">
+        nav,
+      </if>
+      <if test="navchgrt != null">
+        navchgrt,
+      </if>
+      <if test="newPrice != null">
+        new_price,
+      </if>
+      <if test="pDate != null">
+        p_date,
+      </if>
+      <if test="shortName != null">
+        short_name,
+      </if>
+      <if test="zjl != null">
+        zjl,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides=",">
+      <if test="id != null">
+        #{id,jdbcType=INTEGER},
+      </if>
+      <if test="createTime != null">
+        #{createTime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="updateTime != null">
+        #{updateTime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="accNav != null">
+        #{accNav,jdbcType=VARCHAR},
+      </if>
+      <if test="changeRatio != null">
+        #{changeRatio,jdbcType=VARCHAR},
+      </if>
+      <if test="fCode != null">
+        #{fCode,jdbcType=VARCHAR},
+      </if>
+      <if test="gsz != null">
+        #{gsz,jdbcType=VARCHAR},
+      </if>
+      <if test="gszzl != null">
+        #{gszzl,jdbcType=VARCHAR},
+      </if>
+      <if test="gzTime != null">
+        #{gzTime,jdbcType=VARCHAR},
+      </if>
+      <if test="hqDate != null">
+        #{hqDate,jdbcType=VARCHAR},
+      </if>
+      <if test="isHaveRedpacket != null">
+        #{isHaveRedpacket,jdbcType=BIT},
+      </if>
+      <if test="nav != null">
+        #{nav,jdbcType=VARCHAR},
+      </if>
+      <if test="navchgrt != null">
+        #{navchgrt,jdbcType=VARCHAR},
+      </if>
+      <if test="newPrice != null">
+        #{newPrice,jdbcType=VARCHAR},
+      </if>
+      <if test="pDate != null">
+        #{pDate,jdbcType=VARCHAR},
+      </if>
+      <if test="shortName != null">
+        #{shortName,jdbcType=VARCHAR},
+      </if>
+      <if test="zjl != null">
+        #{zjl,jdbcType=VARCHAR},
+      </if>
+    </trim>
+  </insert>
+  <update id="updateByPrimaryKeySelective" parameterType="com.qw.boot.examples.codegen.entity.fundEveryday">
+    update fund_everyday
+    <set>
+      <if test="createTime != null">
+        create_time = #{createTime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="updateTime != null">
+        update_time = #{updateTime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="accNav != null">
+        acc_nav = #{accNav,jdbcType=VARCHAR},
+      </if>
+      <if test="changeRatio != null">
+        change_ratio = #{changeRatio,jdbcType=VARCHAR},
+      </if>
+      <if test="fCode != null">
+        f_code = #{fCode,jdbcType=VARCHAR},
+      </if>
+      <if test="gsz != null">
+        gsz = #{gsz,jdbcType=VARCHAR},
+      </if>
+      <if test="gszzl != null">
+        gszzl = #{gszzl,jdbcType=VARCHAR},
+      </if>
+      <if test="gzTime != null">
+        gz_time = #{gzTime,jdbcType=VARCHAR},
+      </if>
+      <if test="hqDate != null">
+        hq_date = #{hqDate,jdbcType=VARCHAR},
+      </if>
+      <if test="isHaveRedpacket != null">
+        is_have_redpacket = #{isHaveRedpacket,jdbcType=BIT},
+      </if>
+      <if test="nav != null">
+        nav = #{nav,jdbcType=VARCHAR},
+      </if>
+      <if test="navchgrt != null">
+        navchgrt = #{navchgrt,jdbcType=VARCHAR},
+      </if>
+      <if test="newPrice != null">
+        new_price = #{newPrice,jdbcType=VARCHAR},
+      </if>
+      <if test="pDate != null">
+        p_date = #{pDate,jdbcType=VARCHAR},
+      </if>
+      <if test="shortName != null">
+        short_name = #{shortName,jdbcType=VARCHAR},
+      </if>
+      <if test="zjl != null">
+        zjl = #{zjl,jdbcType=VARCHAR},
+      </if>
+    </set>
+    where id = #{id,jdbcType=INTEGER}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="com.qw.boot.examples.codegen.entity.fundEveryday">
+    update fund_everyday
+    set create_time = #{createTime,jdbcType=TIMESTAMP},
+      update_time = #{updateTime,jdbcType=TIMESTAMP},
+      acc_nav = #{accNav,jdbcType=VARCHAR},
+      change_ratio = #{changeRatio,jdbcType=VARCHAR},
+      f_code = #{fCode,jdbcType=VARCHAR},
+      gsz = #{gsz,jdbcType=VARCHAR},
+      gszzl = #{gszzl,jdbcType=VARCHAR},
+      gz_time = #{gzTime,jdbcType=VARCHAR},
+      hq_date = #{hqDate,jdbcType=VARCHAR},
+      is_have_redpacket = #{isHaveRedpacket,jdbcType=BIT},
+      nav = #{nav,jdbcType=VARCHAR},
+      navchgrt = #{navchgrt,jdbcType=VARCHAR},
+      new_price = #{newPrice,jdbcType=VARCHAR},
+      p_date = #{pDate,jdbcType=VARCHAR},
+      short_name = #{shortName,jdbcType=VARCHAR},
+      zjl = #{zjl,jdbcType=VARCHAR}
+    where id = #{id,jdbcType=INTEGER}
+  </update>
+</mapper>

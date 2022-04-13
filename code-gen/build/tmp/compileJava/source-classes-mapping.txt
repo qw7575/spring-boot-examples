@@ -1,0 +1,2 @@
+com/qw/boot/examples/codegen/CodeGenApplication.java
+ com.qw.boot.examples.codegen.CodeGenApplication
